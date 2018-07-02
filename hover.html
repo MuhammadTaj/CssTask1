@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hover</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="hover.css">
+</head>
+<body>
+	<div class="projectPanel">
+		<h2 style="font-size: 26pt">Our Latest Projects</h2>
+		<p>Here is our latest projects. You'll love them!</p>
+		<div class="projects">
+			<div class="container">
+			  	<img src="images/project7.jpg" alt="Avatar" class="image" style="width:100%">
+				<div class="middle">
+				    <div class="text">Project7</div>
+				</div>	
+			</div>
+			<div class="container">
+			  	<img src="images/project7.jpg" alt="Avatar" class="image" style="width:100%">
+				<div class="middle">
+				    <div class="text">Project7</div>
+				</div>	
+			</div>
+			<div class="container">
+			  	<img src="images/project7.jpg" alt="Avatar" class="image" style="width:100%">
+				<div class="middle">
+				    <div class="text">Project7</div>
+				</div>	
+			</div>
+		</div>
+	</div>	
+<style>
+
+.container {
+    position: relative;
+    width: 25%;
+    height: 25%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.6;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+*{
+	color: black;
+}
+
+.dm{
+	opacity: 0;
+}
+.dd:hover .dm{
+	opacity: 1;
+}
+</style>
+	<div class="dd">
+		<ul>
+			<li>dd
+				<ul>
+					<li class="dm">dm</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

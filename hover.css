@@ -1,0 +1,17 @@
+#hov{
+	z-index:1;
+	left: 25%;
+	position: absolute;
+	width: 25%;
+	height: 36%;
+	background: rgba(0,0,0,.6);
+
+}
+img:hover{
+
+	transition: 0.2s;
+	opacity: 0.6;
+}
+*{
+	color: white;
+}
